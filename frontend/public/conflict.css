@@ -1,0 +1,98 @@
+:root {
+    --bg: #0b0e14;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+    --high: #ff4757;
+    --med: #ffa502;
+    --low: #2ed573;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    margin: 0; padding: 20px;
+}
+
+.glass-shell {
+    max-width: 1200px; margin: auto;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 24px; padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.main-layout { display: grid; grid-template-columns: 350px 1fr; gap: 40px; }
+
+/* Risk Cards */
+.risk-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px; padding: 20px;
+    margin-bottom: 15px; border-left: 6px solid transparent;
+    transition: transform 0.2s;
+}
+
+.risk-card:hover { transform: translateX(10px); }
+
+.high-risk { border-left-color: var(--high); }
+.med-risk { border-left-color: var(--med); }
+.low-risk { border-left-color: var(--low); }
+
+.risk-header { display: flex; justify-content: space-between; align-items: center; }
+
+.badge {
+    font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.high-risk { border-left: 5px solid #ff4757; background: rgba(255, 71, 87, 0.05); }
+.med-risk { border-left: 5px solid #ffa502; background: rgba(255, 165, 2, 0.05); }
+.low-risk { border-left: 5px solid #2ed573; background: rgba(46, 213, 115, 0.05); }
+
+.risk-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.sync-btn {
+    width: 100%; padding: 15px; border-radius: 12px;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white; border: none; font-weight: 600; cursor: pointer;
+    margin-top: 20px;
+}
+/* Enhanced Risk UI */
+.risk-tag {
+    display: inline-block;
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    margin: 5px 5px 0 0;
+    border: 1px solid rgba(255, 71, 87, 0.2);
+    font-weight: 600;
+}
+
+.med-risk .risk-tag {
+    color: var(--med);
+    background: rgba(255, 165, 2, 0.1);
+    border-color: rgba(255, 165, 2, 0.2);
+}
+
+.low-risk .risk-tag {
+    color: var(--low);
+    background: rgba(46, 213, 115, 0.1);
+    border-color: rgba(46, 213, 115, 0.2);
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}

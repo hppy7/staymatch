@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StayMatch | Innovation Dashboard</title>
+
+<link rel="stylesheet" href="dashboard_style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="dash-body">
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<nav class="glass-nav">
+
+<div class="nav-container">
+
+<div class="logo">Stay<span>Match</span></div>
+
+<div class="nav-links">
+<a href="dashboard.html" class="active">Dashboard</a>
+<a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="status-pill">
+<span class="dot"></span> Active
+</div>
+
+</div>
+
+</nav>
+
+<main class="dashboard-container">
+    <header class="welcome-section">
+        <h1 id="user-greeting">Welcome back 👋</h1>
+        <p>Your AI-driven ecosystem for perfect shared living.</p>
+    </header>
+
+    <section class="bento-grid">
+        <div class="card lg-card primary-gradient" onclick="window.location.href='matching.html'">
+            <div class="card-header">
+                <span class="icon">🧩</span>
+                <span class="tag">Live</span>
+            </div>
+            <div>
+                <h2>Neural Compatibility</h2>
+                <p>Advanced lifestyle syncing powered by StayMatch AI.</p>
+            </div>
+        </div>
+
+        <div class="card md-card danger-glow" onclick="window.location.href='conflict.html'">
+            <div class="card-header">
+                <span class="icon">⚠️</span>
+                <span class="tag" style="background: var(--accent)">Risk</span>
+            </div>
+            <div>
+                <h2>Conflict Predictor</h2>
+                <p>Identify friction points before you move in.</p>
+            </div>
+        </div>
+
+        <div class="card sm-card glass-card" onclick="window.location.href='smart.html'">
+            <div class="card-header">
+                <span class="icon">🧹</span>
+            </div>
+            <h2>Smart Chores</h2>
+            <p>AI-balanced task rotation.</p>
+        </div>
+
+        <div class="card sm-card" onclick="alert('Feature coming soon!')">
+            <div class="card-header"><span class="icon">🧹</span></div>
+            <h2>Smart Chores</h2>
+            <p>AI-balanced tasks.</p>
+        </div>
+
+        <div class="card sm-card" onclick="alert('Feature coming soon!')">
+            <div class="card-header"><span class="icon">📈</span></div>
+            <h2>Analytics</h2>
+            <p>Synergy metrics.</p>
+        </div>
+
+        <div class="card wide-card" onclick="alert('Feature coming soon!')">
+            <div class="card-header">
+                <span class="icon">📜</span>
+                <span class="tag">Auto</span>
+            </div>
+            <div>
+                <h2>Agreement Architect</h2>
+                <p>Generate legally binding roommate contracts instantly.</p>
+            </div>
+        </div>
+
+        <div class="card sm-card" onclick="alert('Feature coming soon!')">
+            <div class="card-header"><span class="icon">💸</span></div>
+            <h2>Rent Split</h2>
+            <p>Fair cost logic.</p>
+        </div>
+
+        <div class="card sm-card" onclick="alert('Feature coming soon!')">
+            <div class="card-header"><span class="icon">✨</span></div>
+            <h2>Vibe Check</h2>
+            <p>Social matching.</p>
+        </div>
+    </section>
+</main>
+
+
+<script src="../src/components/dashboard_script.js"></script>
+
+</body>
+
+</html>

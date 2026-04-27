@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayMatch | Smart Chores</title>
+    <link rel="stylesheet" href="smart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="smart-body">
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="glass-shell">
+        <header class="chores-header">
+            <div class="back-link" onclick="window.location.href='dashboard.html'">← Dashboard</div>
+            <h1>Smart Chore <span>Engine</span></h1>
+            <p>Distributing household labor based on study stress and skills.</p>
+        </header>
+
+        <section class="chores-area">
+            <div class="control-panel">
+                <div class="status-badge">
+                    <span class="pulse"></span> AI Logic Active
+                </div>
+                <button onclick="generateChores()" class="sync-btn">Generate Fair Schedule</button>
+            </div>
+
+            <div id="choreResults" class="results-wrapper">
+                <div class="empty-state">
+                    <span class="big-icon">🤖</span>
+                    <h3>System Ready</h3>
+                    <p>Click generate to calculate optimal task distribution.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="smart.js"></script>
+</body>
+</html>
