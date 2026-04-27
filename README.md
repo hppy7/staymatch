@@ -1,21 +1,61 @@
-# StayMatch – AI Roommate Compatibility Platform
+# 🏠 StayMatch – AI Roommate Compatibility Platform
 
-StayMatch is a full-stack web application that helps users find compatible roommates based on lifestyle preferences.
+StayMatch is a full-stack web application that helps students and professionals find compatible roommates based on lifestyle preferences.
 
-## 🚀 Features
-- User Authentication (JWT)
-- Compatibility Score Engine
-- Conflict Risk Prediction
-- Smart Chore Allocation
-- Roommate Agreement Generator
+It predicts compatibility scores, conflict risks, and suggests smarter shared living decisions.
+
+---
+
+## 🎥 Demo
+👉 https://youtu.be/HAQ2HPi6gWs
+
+---
+
+## 🌐 Live Project
+👉 [Add your deployed link here]
+
+---
+
+## 🚀 Key Features
+
+- 🔐 User Authentication (JWT-based login/signup)
+- 🧠 Lifestyle Compatibility Matching Engine
+- ⚠️ Conflict Risk Prediction System
+- 🧹 Smart Chore Allocation
+- 📄 Auto Roommate Agreement Generator
+- 📊 Interactive Dashboard & Analytics
+
+---
 
 ## 🛠 Tech Stack
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express
-- Database: MongoDB
 
-## 🌐 Live Demo
-[Add your deployed link here]
+**Frontend**
+- HTML5, CSS3, JavaScript
+- Chart.js
 
-## 📂 GitHub
-https://github.com/hppy7/staymatch
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- MongoDB
+- Mongoose
+
+**Authentication**
+- JWT, bcrypt
+
+---
+
+## 🧠 How It Works
+
+1. Users enter lifestyle preferences  
+2. System calculates compatibility score  
+3. Predicts conflict risk (Low / Medium / High)  
+4. Generates:
+   - Match recommendation  
+   - Chore distribution  
+   - Roommate agreement  
+
+---
+
+## 📂 Project Structure
